@@ -1,0 +1,10 @@
+.xleftcol {
+   float: left;
+   width: 33%;
+   background:#809900;
+}
+.xmiddlecol {
+   float: left;
+   width: 34%;
+   background:#eff2df;
+}
