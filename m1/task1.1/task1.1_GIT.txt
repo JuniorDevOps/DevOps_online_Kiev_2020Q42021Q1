@@ -1,0 +1,16 @@
+b2b0377 HEAD@{0}: merge develop: Fast-forward
+c062d21 HEAD@{1}: checkout: moving from develop to main
+b2b0377 HEAD@{2}: commit (merge): Merged and resolved the conflict in index.html
+ba65c43 HEAD@{3}: merge images: Fast-forward
+9b38e00 HEAD@{4}: checkout: moving from styles to develop
+b2d5399 HEAD@{5}: commit: Index.html changed
+7714ae9 HEAD@{6}: commit: Styles source added
+9b38e00 HEAD@{7}: checkout: moving from develop to styles
+9b38e00 HEAD@{8}: checkout: moving from images to develop
+ba65c43 HEAD@{9}: commit: Index.html changed
+3747bf2 HEAD@{10}: commit: Add an image
+9b38e00 HEAD@{11}: checkout: moving from develop to images
+9b38e00 HEAD@{12}: commit: Create index.html
+c062d21 HEAD@{13}: checkout: moving from main to develop
+c062d21 HEAD@{14}: commit: Initial commit
+2587aba HEAD@{15}: clone: from https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1.git
