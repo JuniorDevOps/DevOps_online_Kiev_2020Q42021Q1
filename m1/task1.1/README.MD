@@ -19,8 +19,9 @@ Created "styles" branch. Checkout on it. Add styles folder with styles source in
 Changed index.html. Commit. 
 Went to "develop" branch. 
 I've merged two branches ("images" and "styles") into "develop" branch using git merge command. 
--  merge "images" into "develop" - merge "styles" into "develop" 
-I've got conflict of merge. 
+-  merge "images" into "develop".
+-  merge "styles" into "develop".
+I've got conflict of merge.
 
 ![4](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/raw/main/m1/task1.1/screenshots/4.png)
 ![5](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/raw/main/m1/task1.1/screenshots/5.png)
@@ -31,7 +32,7 @@ I've resolved the conflict in index.html
 ![7](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/raw/main/m1/task1.1/screenshots/7.png)
 
 I've merge "develop" into "master (main)". 
-I've inspected repository with git log command. Gitlog.txt and history_file.txt (commands history file)  are added.
+I've inspected repository with git log command. Gitlog.txt file added.
 
 I've pushed all changes with all branches to origin.
 ![8](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/raw/main/m1/task1.1/screenshots/8.png)
