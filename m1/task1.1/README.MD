@@ -1,13 +1,13 @@
 #### What i've done in Task 1.1
 I have installed and seted up GIT on mine workstation. After that I have created new private repo on GitHub - DevOps_online_Kiev_2020Q42021Q1 and cloned repo to my workstation. 
 
-![1](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/tree/main/m1/task1.1/screenshots/1.png)
+![1](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m1/task1.1/screenshots/1.png)
 
 After that I created empty readme.txt file and made initial commit. 
 Created develop branch and checkout on it. 
 Created index.html empty file and made commit.
 
-![2](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/tree/main/m1/task1.1/screenshots/2.png)
+![2](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/raw/main/m1/task1.1/screenshots/2.png)
 
 I've created branch with name images and checkouted on it. Added image to folder. Commit. 
 Changed index.html by adding image source inside it. Commit. 
