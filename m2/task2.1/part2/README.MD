@@ -36,5 +36,6 @@ Configure a shared folder to exchange data between the virtual machine and the h
 ### I had some problems, but i solved them. ###
 ![19](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/19.png)
 ![20](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/20.png)
+Folder shared
 ![21](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/21.png)
 ![22](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/22.png)
