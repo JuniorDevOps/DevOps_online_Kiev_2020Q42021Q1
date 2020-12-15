@@ -32,7 +32,8 @@ Configure the USB to connect the USB ports of the host machine to the VM.
 ![17](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/17.png)
 ![18](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/18.png)
 Configure a shared folder to exchange data between the virtual machine and the host.
-`I had some problems, but i solved them.`
+
+<span style="color:red">*I had some problems, but i solved them.* text</span>
 ![19](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/19.png)
 ![20](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/20.png)
 ![21](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/21.png)
