@@ -22,6 +22,9 @@ For VM1, changing its state, take several different snapshots, forming a branche
 Export VM1. Save the *.ova file to disk. Import VM from *.ova file. 
 ![13](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/13.png)
 
+
+
+
 ### 2. Configuration of virtual machines.
 
 Explore VM configuration options (general settings, system settings, display, storage, audio, network, etc.). 
@@ -83,6 +86,9 @@ Host IP 192.168.1.181
 ### `* From VM to Inet/Lan.` We have a ping.
 ![31](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/31.png)
 ### `* From Inet/Lan to VM.` We should use port forwarding.
+
+
+
 
 ### 3. Work with CLI through VBoxManage.
 
