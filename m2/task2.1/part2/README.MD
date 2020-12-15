@@ -86,4 +86,71 @@ Host IP 192.168.1.181
 
 #### 3. Work with CLI through VBoxManage.
 
+![32](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/32.png)
+We create a new virtual machine:
+> vboxmanage createvm --name valerii --ostype Ubuntu_64 --register
+
+![33](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/33.png)
+
+We indicate the parameters of the VM:
+> vboxmanage modifyvm valerii --cpus 2 --memory 4096 --audio none \
+  --usb off --acpi on --boot1 dvd --nic1 nat
+
+![34](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/34.png)
+
+Create a 10 GB hard drive:
+
+> vboxmanage createhd \
+  --filename C:\Users\Валерий\VirtualBoxVMs\valerii\valerii.vdi \
+  --size 10000
+
+We attach the hard disk to the virtual machine:
+
+> vboxmanage storagectl valerii --name ide-controller --add ide
+vboxmanage storageattach valerii --storagectl ide-controller \
+  --port 0 --device 0 --type hdd \
+--medium C:\Users\Валерий\VirtualBoxVMs\valerii\valerii.vdi
+
+We attach to the VM the ISO image from which the system will be installed:
+
+> vboxmanage storageattach valerii --storagectl ide-controller \
+  --port 0 --device 1 --type dvddrive \
+  --medium C:\Users\Валерий\Downloads\ubuntu-20.04-desktop-amd64.iso
+
+![35](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/35.png)
+
+View virtual machine properties:
+
+> vboxmanage showvminfo valerii
+
+![36](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/36.png)
+![37](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/37.png)
+
+Start VM:
+
+> vboxmanage startvm valerii
+
+![38](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/38.png)
+![39](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/39.png)
+![40](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/40.png)
+
+Checking VM in stock:
+
+> vboxmanage list vms
+
+![41](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/41.png)
+
+Pause VM:
+
+> vboxmanage controlvm valerii pause
+
+![43](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/43.png)
+
+Make snapshot VM:
+
+> vboxmanage snapshot valerii take "Terminal"
+
+![44](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/44.png)
+![45](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/44.png)
+![46](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/46.png)
 
