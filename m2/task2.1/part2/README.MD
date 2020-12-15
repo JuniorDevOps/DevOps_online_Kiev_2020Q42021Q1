@@ -1,6 +1,6 @@
 ## PART 2. WORK WITH VIRTUALBOX
 
-#### 1. First run VirtualBox and Virtual Machine (VM).
+### 1. First run VirtualBox and Virtual Machine (VM).
 
 Create VM1 and install Ubuntu. Set machine name "Ubuntu_Mankovskyi" 
 ![1](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/1.png)
@@ -22,7 +22,7 @@ For VM1, changing its state, take several different snapshots, forming a branche
 Export VM1. Save the *.ova file to disk. Import VM from *.ova file. 
 ![13](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/13.png)
 
-#### 2. Configuration of virtual machines.
+### 2. Configuration of virtual machines.
 
 Explore VM configuration options (general settings, system settings, display, storage, audio, network, etc.). 
 Configure the USB to connect the USB ports of the host machine to the VM.
@@ -84,7 +84,7 @@ Host IP 192.168.1.181
 ![31](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/31.png)
 ### `* From Inet/Lan to VM.` We should use port forwarding.
 
-#### 3. Work with CLI through VBoxManage.
+### 3. Work with CLI through VBoxManage.
 
 ![32](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/screenshots/32.png)
 We create a new virtual machine:
