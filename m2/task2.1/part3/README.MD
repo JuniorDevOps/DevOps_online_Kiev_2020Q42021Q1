@@ -7,7 +7,7 @@ Download and install Vagrant.
 ![48](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/48.png)
 ![49](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/49.png)
 
-Run the powershell as administrator. Create a folder "valerii".
+Run the powershell as administrator. Create a folder "Valerii".
 
 ![50](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/50.png)
 
