@@ -1,0 +1,30 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "hashicorp-vagrant/ubuntu-16.04"
+  config.vm.box_check_update = false
+  config.vm.provision "shell", inline: <<-SHELL
+    apt-get update
+    apt-get install -y apache2
+  SHELL
+
+  config.vm.define "test1" do |test1|
+      test1.vm.network  "private_network", ip: "192.168.33.10"
+      test1.vm.synced_folder ".", "/var/www/html"
+      test1.vm.hostname = "test1"  
+      test1.vm.provider "virtualbox" do |vb|
+         vb.memory = "2048"
+      end
+  end
+
+  config.vm.define "test2" do |test2|
+      test2.vm.network  "private_network", ip: "192.168.33.11"
+      test2.vm.synced_folder ".", "/var/www/html"
+      test2.vm.hostname = "test2"  
+      test2.vm.provider "virtualbox" do |vb|
+         vb.memory = "2048"
+      end
+  end
+ 
+end
