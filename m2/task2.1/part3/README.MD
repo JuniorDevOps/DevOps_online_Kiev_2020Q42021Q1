@@ -49,3 +49,73 @@ Shutting and Deleting machine:
 > vagrant destroy
 
 ![58](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/58.png)
+
+
+
+## Create a test environment from a few servers.
+
+First of all we initialized the environment with default Vagrant box and got Vagrant file for editing.
+
+> vagrant init hashicorp-vagrant/ubuntu-16.04
+
+![60](screenshots/60.png)
+
+![61](screenshots/61.png)
+
+Сhanged the Vagrantfile file for our purposes.
+
+![Vagrantfile](screenshots/Vagrantfile)
+
+Also I wrote a little html page and puted it in folder with Vagrant file.
+
+```sh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPAM University Programs</title>
+</head>
+<body>
+    <h1>EPAM University Programs</h1>
+    <h2>DevOps Online Kiev 2020Q42021Q1</h2>
+    <h2>Valerii Mankovskyi</h2>
+</body>
+</html>
+```
+
+Used command below to create/configure guest machines according to our Vagrantfile.
+
+> vagrant up
+
+![63](screenshots/63.png)
+
+![66](screenshots/66.png)
+
+![67](screenshots/67.png)
+
+![68](screenshots/68.png)
+
+![69](screenshots/69.png)
+
+![70](screenshots/70.png)
+
+Connect to running machine using SSH
+
+>vagrant ssh test1
+
+>vagrant ssh test2
+
+Cheking for Apache Server
+
+![73](screenshots/73.png)
+
+![74](screenshots/74.png)
+
+![76](screenshots/76.png)
+
+After that cheking for my page in browser
+
+![75](screenshots/75.png)
+
+![77](screenshots/77.png)
