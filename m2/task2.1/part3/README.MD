@@ -64,7 +64,7 @@ First of all we initialized the environment with default Vagrant box and got Vag
 
 Сhanged the Vagrantfile file for our purposes.
 
-**[Vagrantfile](screenshots/Vagrantfile)**
+**[Vagrantfile](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/Vagrantfile)**
 
 Also I wrote a little html page and puted it in folder with Vagrant file.
 
