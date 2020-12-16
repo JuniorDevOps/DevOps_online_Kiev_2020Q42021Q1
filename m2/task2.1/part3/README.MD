@@ -26,9 +26,13 @@ Create and configure guest machines according to Vagrantfile:
 ![53](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/53.png)
 
 Connect to running machine using SSH via MobaXterm.
+
 IP address: 127.0.0.1
+
 Port: 2222
+
 Login: vagrant
+
 Password: vagrant
 
 And running date command on guest machine:
@@ -36,7 +40,7 @@ And running date command on guest machine:
 
 ![56](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/56.png)
 
-![57](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/56.png)
+![57](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/57.png)
 
 Shutting and Deleting machine:
 
@@ -44,4 +48,4 @@ Shutting and Deleting machine:
 
 > vagrant destroy
 
-![58](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/56.png)
+![58](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/58.png)
