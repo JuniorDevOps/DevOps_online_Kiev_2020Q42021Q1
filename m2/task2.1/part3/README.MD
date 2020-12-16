@@ -64,7 +64,7 @@ First of all we initialized the environment with default Vagrant box and got Vag
 
 Сhanged the Vagrantfile file for our purposes.
 
-![Vagrantfile](screenshots/Vagrantfile)
+**[Vagrantfile](screenshots/Vagrantfile)**
 
 Also I wrote a little html page and puted it in folder with Vagrant file.
 
