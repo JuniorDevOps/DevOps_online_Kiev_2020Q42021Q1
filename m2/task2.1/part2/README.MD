@@ -74,7 +74,7 @@ Folder shared
 
 Configure different network modes for VM1, VM2. Check the connection between VM1, VM2, Host, Internet for different network modes.
 
-**Main Networking Modes:**
+# Main Networking Modes:
 
 * NAT (Network Address Translation)
 * NAT Network
@@ -92,7 +92,7 @@ Configure different network modes for VM1, VM2. Check the connection between VM1
 | NAT | yes | Port Forwarding | no | yes | Port Forwarding |
 | NAT Network | yes | Port Forwarding | yes | yes | Port Forwarding |
 
-# NAT (Network Address Translation)
+# NAT
 
 | Mode | VM-Host | Host-VM | VM1-VM2 | VM-Inet/Lan | Inet/Lan-VM |
 | :-----: | :------:| :------: | :------: | :------: | :------: |
@@ -200,6 +200,8 @@ In this mode Vms can communicate with each other.
 In this mode we have connection only between VMs.
 
 To enable the DHCP server, you need to enable it via command line in host machine. 
+
+> vboxmanage dhcpserver add --netname Pentestlab --ip 10.10.10.1 --netmask 255.255.255.0 --lowerip 10.10.10.2 --upperip 10.10.10.10 --enable 
 
 ![65](screenshots/65.png)
 
