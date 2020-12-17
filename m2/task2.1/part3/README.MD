@@ -1,6 +1,6 @@
 ## PART 3. WORK WITH VAGRANT 
 
-Download the required version of Vagrant according to the instructions [5] and according to the host operating system (OS) installed on the student's workplace.
+Download the required version of Vagrant according to the instructions and operating system (OS) installed.
 Download and install Vagrant.
 
 ![47](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/47.png)
@@ -11,13 +11,13 @@ Run the powershell as administrator. Create a folder "Valerii".
 
 ![50](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/50.png)
 
-Move to Valerii folder and initialize the environment with the degault Vagrant box:
+Move to Valerii folder and initialize the environment with the Vagrant box:
 
 > vagrant init hashicorp/precise64
 
 ![51](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/51.png)
 
-Create and configure guest machines according to Vagrantfile:
+Create and configure guest machine according to Vagrantfile:
 
 > vagrant up
 
@@ -35,7 +35,7 @@ Login: vagrant
 
 Password: vagrant
 
-And running date command on guest machine:
+And run date command:
 > date
 
 ![56](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/screenshots/56.png)
@@ -54,7 +54,7 @@ Shutting and Deleting machine:
 
 ## Create a test environment from a few servers.
 
-First of all we initialized the environment with default Vagrant box and got Vagrant file for editing.
+First of all we initialized the environment with Vagrant box and got Vagrant file for editing.
 
 > vagrant init hashicorp-vagrant/ubuntu-16.04
 
@@ -106,7 +106,7 @@ Connect to running machine using SSH
 
 >vagrant ssh test2
 
-Cheking for Apache Server
+Checking for Apache Server
 
 ![73](screenshots/73.png)
 
@@ -114,7 +114,7 @@ Cheking for Apache Server
 
 ![76](screenshots/76.png)
 
-After that cheking for my page in browser
+After that checking for my page in browser
 
 ![75](screenshots/75.png)
 
