@@ -170,9 +170,13 @@ In this mode Vms can communicate with each other.
 | :-----: | :------:| :------: | :------: | :------: | :------: |
 | Briged | yes | yes | yes | yes | yes |
 
-![54](screenshots/53.png)
+![54](screenshots/54.png)
+
+### `From VM1 to VM2.` We have a ping.
 
 ![56](screenshots/56.png)
+
+![59](screenshots/59.png)
 
 ![57](screenshots/57.png)
 
@@ -187,20 +191,68 @@ In this mode Vms can communicate with each other.
 
 
 
-
 # INTERNAL NETWORK
 
 | Mode | VM-Host | Host-VM | VM1-VM2 | VM-Inet/Lan | Inet/Lan-VM |
 | :-----: | :------:| :------: | :------: | :------: | :------: |
 | Internal | no | no | yes | no | no |
 
+In this mode we have connection only between VMs.
 
+To enable the DHCP server, you need to enable it via command line in host machine. 
+
+![65](screenshots/65.png)
+
+After that attached the adapter to  Internal Network.
+
+![66](screenshots/66.png)
+
+### `From VM to VM.` We have a ping.
+
+![67](screenshots/67.png)
+
+### `From Host to VM.` No ping. 
+
+![68](screenshots/68.png)
+
+### `From VM to Host.` No ping. 
+### `From VM to Inet/Lan.` No ping. 
+
+![69](screenshots/69.png)
 
 # HOST-ONLY NETWORK
 
 | Mode | VM-Host | Host-VM | VM1-VM2 | VM-Inet/Lan | Inet/Lan-VM |
 | :-----: | :------:| :------: | :------: | :------: | :------: |
 | Host-only | yes | yes | yes | no | no |
+
+First you must set up a virtual network that the host-only adapter(s) will communicate through.
+
+> IPv4 Address: 192.168.56.1
+> IPv4 Network Mask: 255.255.255.0
+
+And DHCP Server
+
+> Server Address: 192.168.56.100
+> Server Mask: 255.255.255.0
+> Lower Address Bound: 192.168.56.101
+> Upper Address Bound: 192.168.56.254
+
+![61](screenshots/61.png)
+
+![62](screenshots/62.png)
+
+### `From VM to VM.` We have a ping. 
+
+### `From Host to VM.` We have a ping. 
+
+### `From VM to Inet/Lan.` We do not have a ping. 
+
+![63](screenshots/63.png)
+
+![64](screenshots/64.png)
+
+
 
 
 
