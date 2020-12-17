@@ -1,4 +1,4 @@
-## Part 1. Hypervisors
+## PART 1. HYPERVISORS
 **Hypervisor** - software or hardware scheme that provides simultaneous parallel operation of several operating systems on one computer.
 The main purpose of the hypervisor is to provide isolated runtimes for each virtual machine and to control the access of the virtual machine and guest operating system to the physical hardware resources of the computer.
 ##### 1. What are the most popular hypervisors for infrastructure virtualization?
