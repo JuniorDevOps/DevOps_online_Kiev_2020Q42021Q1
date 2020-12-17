@@ -201,7 +201,7 @@ In this mode we have connection only between VMs.
 
 To enable the DHCP server, you need to enable it via command line in host machine. 
 
-> vboxmanage dhcpserver add --netname Pentestlab --ip 10.10.10.1 --netmask 255.255.255.0 --lowerip 10.10.10.2 --upperip 10.10.10.10 --enable 
+> vboxmanage dhcpserver add --netname Valerii --ip 10.10.10.1 --netmask 255.255.255.0 --lowerip 10.10.10.2 --upperip 10.10.10.10 --enable 
 
 ![65](screenshots/65.png)
 
