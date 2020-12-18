@@ -1,4 +1,4 @@
-## PART 2. WORK WITH VIRTUALBOX
+## PART 2. Work with VirtualBox
 
 ### 1. First run VirtualBox and Virtual Machine (VM).
 
