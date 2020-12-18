@@ -1,4 +1,4 @@
-## PART 3. WORK WITH VAGRANT 
+# PART 3. Work with Vagrant 
 
 Download the required version of Vagrant according to the instructions and operating system (OS) installed.
 Download and install Vagrant.
