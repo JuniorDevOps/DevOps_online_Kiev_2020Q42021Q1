@@ -1,4 +1,4 @@
-# PART 1. Launch a Linux Virtual Machine with Amazon Lightsail
+# PART 2. Launch a Linux Virtual Machine with Amazon Lightsail
 
 #### Choose Amazon Lightsail. Select AWS Region, Availability Zone, platform and a type of a blueprint.
 
