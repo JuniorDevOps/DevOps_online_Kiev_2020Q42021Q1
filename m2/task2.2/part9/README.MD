@@ -63,7 +63,7 @@ www.jundevops.com.s3-website.eu-central-1.amazonaws.com
 
 #### What happens if we enter the website address with a typo, you can see below
 
-![25](screenshots/25.png)
+![26](screenshots/26.png)
 
 
 ## The list with links of completed labs is based on tutorials.
