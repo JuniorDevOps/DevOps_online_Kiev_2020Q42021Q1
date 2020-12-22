@@ -8,16 +8,15 @@
 
 #### If you wish you can add a launch script. 
 
-![5](screenshots/5.png)      
-![4](screenshots/4.png)  
+![5](screenshots/5.png)   
 
-#### Choose SSH key pair you would like to use to SSH into your instance. Instance plan and identify your instance and press Create instance.
+####  Choose instance plan and identify your instance and press Create instance.
 
 ![6](screenshots/6.png)      
 ![7](screenshots/7.png) 
 ![8](screenshots/8.png)  
 
-#### Connect to your instance using the browser-based SSH terminal in Lightsail or use MobaXterm with saved key pair.
+#### Connect to your instance using the browser-based SSH terminal in Lightsail or download default key pair and use MobaXterm.
  
 ![9](screenshots/9.png)      
 ![10](screenshots/10.png) 
