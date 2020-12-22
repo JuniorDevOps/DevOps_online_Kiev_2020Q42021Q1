@@ -2,8 +2,10 @@
 
 #### Choose Amazon Lightsail. Select AWS Region, Availability Zone, platform and a type of a blueprint.
 
-![1](screenshots/1.png)      
-![3](screenshots/4.png)     
+![1](screenshots/1.png)
+
+![3](screenshots/4.png)
+
 ![4](screenshots/4.png)     
 
 #### If you wish you can add a launch script. 
@@ -13,13 +15,19 @@
 ####  Choose instance plan and identify your instance and press Create instance.
 
 ![6](screenshots/6.png)      
+
 ![7](screenshots/7.png) 
+
 ![8](screenshots/8.png)  
 
 #### Connect to your instance using the browser-based SSH terminal in Lightsail or download default key pair and use MobaXterm.
  
 ![9](screenshots/9.png)      
+
 ![10](screenshots/10.png) 
+
 ![11](screenshots/11.png) 
-![12](screenshots/12.png)      
+
+![12](screenshots/12.png)     
+
 ![13](screenshots/13.png) 
