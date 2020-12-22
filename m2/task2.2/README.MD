@@ -2,6 +2,8 @@
 
 #### [PART 2. Launch a Linux Virtual Machine with Amazon Lightsail](/m2/task2.2/part2/README.MD)
 
+#### [PART 3. Launch a Linux Virtual Machine without Amazon Lightsail anв making of snapshot](/m2/task2.2/part3/README.MD)
+
 #### [PART 4. Attach/detach disk to Virtual Machine](/m2/task2.2/part4/README.MD)
 
 #### [PART 5. Launch a WordPress instance with Amazon Lightsail and domain registration with Amazon Route 53](/m2/task2.2/part5/README.MD)
