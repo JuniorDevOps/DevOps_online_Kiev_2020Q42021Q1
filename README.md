@@ -1,4 +1,6 @@
-# **EPAM University Programs**
+   ![EPAM University Program](m1/zero/epam_logo.png)
+
+# **EPAM University Program**
 ## DevOps Educational Program 2020Q4-2021Q1
 ### Module 1. DevOps Introduction
 * #### [TASK 1.1. Work with GIT](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m1/task1.1/README.MD)
