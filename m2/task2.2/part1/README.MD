@@ -1,4 +1,4 @@
-# PART 9. Intro  
+# PART 1. Intro  
 
 #### Create an AWS account if you don`t have.  
 
