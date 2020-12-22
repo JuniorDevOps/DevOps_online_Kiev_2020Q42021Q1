@@ -1,5 +1,4 @@
-   ![EPAM University Program](m1/zero/epam_logo.png)
-
+   ![EPAM University Program](m1/img/epam_logo.png)
 # **EPAM University Program**
 ## DevOps Educational Program 2020Q4-2021Q1
 ### Module 1. DevOps Introduction
