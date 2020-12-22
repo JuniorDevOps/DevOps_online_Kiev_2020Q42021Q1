@@ -92,5 +92,9 @@ https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-wa
 
 ## The screenshot from amazon.qwiklabs.com with list of completed labs.
 
-![26](screenshots/26.png)
+![26](screenshots/26.png)  
+
+
+
+# [www.jundevops.com](http://www.jundevops.com)
 
