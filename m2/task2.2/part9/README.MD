@@ -1,5 +1,6 @@
-# PART 9. My static website using Amazon S3 and Route 53
-### I will configure an Amazon S3 bucket to function like a website.
+# PART 9. My static website using Amazon S3 and Route 53  
+
+#### In this task i will configure an Amazon S3 bucket to function like a website.
 
 #### Step 1: Register a custom domain with Route 53. A have already registered domain jundevops.com
 
