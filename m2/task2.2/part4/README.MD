@@ -1,7 +1,6 @@
 # PART 4. Attach/detach disk to Virtual Machine
 
-#### In this task a will create and attach a Disk_D (EBS) to my instance to add more storage space. Create and save some file on Disk_D. Launch the third instance from backup.
-Detach Disk_D from the 2nd instance and attach disk_D to the third instance.
+#### In this task a will create and attach a Disk_D (EBS) to my instance to add more storage space. Create and save some file on Disk_D. Launch the third instance from backup. Detach Disk_D from the 2nd instance and attach disk_D to the third instance.
 
 ![1](screenshots/1.png)
 
@@ -40,3 +39,5 @@ Detach Disk_D from the 2nd instance and attach disk_D to the third instance.
 ![19](screenshots/19.png)     
 
 ![20](screenshots/20.png) 
+
+![21](screenshots/21.png) 
