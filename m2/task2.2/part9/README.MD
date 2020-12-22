@@ -8,62 +8,62 @@
 Domain bucket – jundevops.com  
 Subdomain bucket – www.jundevops.com
 
-![1](part9/1.png)  
+![1](screenshots/1.png)  
 
 #### Step 3: Configure your root domain and subdomain buckets for website hosting
 
-![2](part9/2.png)
+![2](screenshots/2.png)
 
-![3](part9/3.png)
+![3](screenshots/3.png)
 
 #### Step 4: Edit S3 Block Public Access settings and attach a bucket policy
 
-![8](part9/8.png)
+![8](screenshots/8.png)
 
-![9](part9/9.png)
+![9](screenshots/9.png)
 
-![10](part9/10.png)
+![10](screenshots/10.png)
 
 #### Step 5: Upload index and website content
 
-![11](part9/11.png)
+![11](screenshots/11.png)
 
 #### Step 6: Test your domain endpoint: 
 
 jundevops.com.s3-website.eu-central-1.amazonaws.com   
 www.jundevops.com.s3-website.eu-central-1.amazonaws.com
 
-![4](part9/4.png)
+![4](screenshots/4.png)
 
-![6](part9/6.png)
+![6](screenshots/6.png)
 
-![21](part9/21.png)
+![21](screenshots/21.png)
 
-![22](part9/22.png)
+![22](screenshots/22.png)
 
 #### Step 7: Create Hosted Zone and add alias records for your domain and subdomain
 
-![13](part9/13.png)
+![13](screenshots/13.png)
 
-![15](part9/15.png)
+![15](screenshots/15.png)
 
-![14](part9/14.png)
+![14](screenshots/14.png)
 
-![18](part9/18.png)
+![18](screenshots/18.png)
 
-![19](part9/19.png)
+![19](screenshots/19.png)
 
-![20](part9/20.png)
+![20](screenshots/20.png)
 
 #### Step 8: Test the websites www.jundevops.com and jundevops.com 
 
-![23](part9/23.png)
+![23](screenshots/23.png)
 
-![24](part9/24.png)
+![24](screenshots/24.png)
 
 #### What happens if we enter the website address with a typo, you can see below
 
-![25](part9/25.png)
+![25](screenshots/25.png)
 
 
 ## The list with links of completed labs is based on tutorials.
@@ -91,5 +91,5 @@ https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-wa
 
 ## The screenshot from amazon.qwiklabs.com with list of completed labs.
 
-![26](part9/26.png)
+![26](screenshots/26.png)
 
