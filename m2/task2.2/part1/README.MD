@@ -1,4 +1,4 @@
-# PART 9. My static website using Amazon S3 and Route 53  
+# PART 9. Intro  
 
 #### Create an AWS account if you don`t have.  
 
