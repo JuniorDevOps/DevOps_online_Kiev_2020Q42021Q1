@@ -5,11 +5,11 @@
 * #### [TASK 1.1. Work with GIT](./m1/task1.1/README.MD)
 
 ### Module 2. Virtualization and Cloud Basic
-* #### [TASK 2.1.](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/README.MD)
-    * #### [PART 1. Hypervisors](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part1/README.MD)
-    * #### [PART 2. Work with VirtualBox](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part2/README.MD)
-    * #### [PART 3. Work with Vagrant](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/part3/README.MD)
-* #### [TASK 2.2. Work with AWS](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.2/README.MD)    
+* #### [TASK 2.1.](./m2/task2.1/README.MD)
+    * #### [PART 1. Hypervisors](./m2/task2.1/part1/README.MD)
+    * #### [PART 2. Work with VirtualBox](./m2/task2.1/part2/README.MD)
+    * #### [PART 3. Work with Vagrant](./m2/task2.1/part3/README.MD)
+* #### [TASK 2.2. Work with AWS](./m2/task2.2/README.MD)    
     * #### [PART 1. Intro](/m2/task2.2/part1/README.MD)
     * #### [PART 2. Launch a Linux Virtual Machine with Amazon Lightsail](/m2/task2.2/part2/README.MD)
     * #### [PART 3. Launch a Linux Virtual Machine without Amazon Lightsail and making of snapshot](/m2/task2.2/part3/README.MD)
@@ -21,10 +21,10 @@
     * #### [PART 9. My static website using Amazon S3 and Route 53](/m2/task2.2/part9/README.MD)
      ### [www.jundevops.com](http://www.jundevops.com)   
 ### Module 3. Database Administration
-* #### [TASK 3.1.](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m3/task3.1/README.MD)
-    * #### [PART 1. Install MySQL. Create a database and make selections](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m3/task3.1/part1/README.MD)
-    * #### [PART 2. Backup of a database. Transfer to RDS AWS](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m3/task3.1/part2/README.MD)
-    * #### [PART 3. Create an Amazon DynamoDB table](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m3/task3.1/part3/README.MD)
+* #### [TASK 3.1.](./main/m3/task3.1/README.MD)
+    * #### [PART 1. Install MySQL. Create a database and make selections](./m3/task3.1/part1/README.MD)
+    * #### [PART 2. Backup of a database. Transfer to RDS AWS](./m3/task3.1/part2/README.MD)
+    * #### [PART 3. Create an Amazon DynamoDB table](./m3/task3.1/part3/README.MD)
 ### Module 4. Networking Fundamentals
 ### Module 5. Linux Essentials
 ### Module 6. Networks using Linux
