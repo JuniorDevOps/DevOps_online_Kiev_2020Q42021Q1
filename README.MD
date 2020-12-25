@@ -2,7 +2,7 @@
 # **EPAM University Program**
 ## DevOps Educational Program 2020Q4-2021Q1
 ### Module 1. DevOps Introduction
-* #### [TASK 1.1. Work with GIT](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m1/task1.1/README.MD)
+* #### [TASK 1.1. Work with GIT](./m1/task1.1/README.MD)
 
 ### Module 2. Virtualization and Cloud Basic
 * #### [TASK 2.1.](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.1/README.MD)
