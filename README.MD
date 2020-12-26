@@ -26,6 +26,10 @@
     * #### [PART 2. Backup of a database. Transfer to RDS AWS](./m3/task3.1/part2/README.MD)
     * #### [PART 3. Create an Amazon DynamoDB table](./m3/task3.1/part3/README.MD)
 ### Module 4. Networking Fundamentals
+* #### [TASK 4.1.](/m4/task4.1/README.MD)
+* #### [TASK 4.2.](/m4/task4.2/README.MD)
+* #### [TASK 4.3.](/m4/task4.3/README.MD)
+* #### [TASK 4.4.](/m4/task4.4/README.MD)
 ### Module 5. Linux Essentials
 ### Module 6. Networks using Linux
 ### Module 7.Linux Administration with Bash
