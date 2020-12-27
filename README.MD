@@ -33,7 +33,7 @@
 ### Module 5. Linux Essentials
 ### Module 6. Networks using Linux
 ### Module 7.Linux Administration with Bash
-### Module 8.Python Intro (under revisioning)
+### Module 8.Python Intro
 ### Module 9.CICD & IaC & Containerization  
 
 ## [Final Project](./Final_Project/)
