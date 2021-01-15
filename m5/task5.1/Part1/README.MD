@@ -1,3 +1,5 @@
+# PART 1. Using commands: passwd, finger, more, less, ls. Fimiliarity with help system, man and info commands.
+
 #### Log in to the system as root.
 #### Use the passwd command to change the password. This command changes shadow file which in /etc directory.
 ![1](screenshots/1.png)  
@@ -32,7 +34,7 @@ The fields, in order from left to right, are:
 ![6](screenshots/6.png) 
 
 
-Command: ```finger```  
+#### Command: ```finger```  
 
 Displays a single line of information about each of the people who are logged in. The columns are:  
 
@@ -72,7 +74,8 @@ Here, we see the user's name (root), followed by a P, indicating that his passwo
 
 Finger command with -l and -s keys for root and linux1 user.
 
-``` finger -l root ```
+``` finger -l root ```  
+
 ``` finger -s root ```
 
 ![11](screenshots/11.png) 
@@ -100,23 +103,27 @@ A useful option of more command is the ```-number``` switch which allows you to 
 ![18](screenshots/18.png) 
 
 Also, you can display a page starting from a specific line number using the ```+number``` option as illustrated below:
+
 ```more +7 .bash_history```
 
 ![19](screenshots/19.png) 
 
 Similar to ```more```, ```less``` command allows you to view the contents of a file and navigate through file. The main difference between ```more``` and ```less``` is that ```less``` command is faster because it does not load the entire file at once and allows navigation though file using page ```up/down``` keys.
 
-You can navigate through the file line by line pressing ```Enter``` key. Page navigation can be handled with ```spaceba```r key. The page size is represented by your current terminal screen size. To exit command type ```q``` key, same way as for more command.
+You can navigate through the file line by line pressing ```Enter``` key. Page navigation can be handled with ```spaceba```r key. The page size is represented by your current terminal screen size. To exit command type ```q``` key, same way as for more command.  
+
 ```less .bash_history```
 
 ![20](screenshots/20.png) 
 
-In order to display a file staring at a specific line number use the following syntax:
+In order to display a file staring at a specific line number use the following syntax:  
+
 ```less +5 .bash_history```
 
 ![21](screenshots/21.png) 
 
-If you need to track down the number of every line with ```less``` command use the -N option.
+If you need to track down the number of every line with ```less``` command use the -N option.  
+
 ```less -N .bash_history```
 
 ![22](screenshots/22.png) 
@@ -126,6 +133,9 @@ If you need to track down the number of every line with ```less``` command use t
 #### List the contents of the home directory using the ls command, define its files and directories. Hint: Use the help system to familiarize yourself with the ls command.
 
 ![23](screenshots/23.png) 
+
 ![24](screenshots/24.png) 
+
 ![25](screenshots/25.png) 
+
 ![26](screenshots/26.png) 
