@@ -140,6 +140,14 @@ If you need to track down the number of every line with ```less``` command use t
 
 ![24](screenshots/24.png) 
 
+#### ```ls ~```
+
+Using command ls with key ~ you can list content of home directory from any place you are.
+
 ![25](screenshots/25.png) 
+
+#### ```ls -la```
+
+Using command ls with -l and -a keys you can list content of current directory in long format with hidden files which starting with .  
 
 ![26](screenshots/26.png) 
