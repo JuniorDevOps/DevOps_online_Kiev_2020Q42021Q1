@@ -1,1 +1,2 @@
-
+* #### [PART 1. Using commands: passwd, finger, more, less, ls. Fimiliarity with help system, man and info commands](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m5/task5.1/part1/README.MD)
+* #### [PART 2. Using commands: tree, file, ls. Fimiliarity with commands find, grep, locate](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m5/task5.1/part2/README.MD)
