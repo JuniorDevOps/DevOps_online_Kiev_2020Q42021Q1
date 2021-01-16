@@ -1,20 +1,23 @@
 # PART 1. Using commands: passwd, finger, more, less, ls. Fimiliarity with help system, man and info commands.
 
-#### Log in to the system as root.
-#### Use the passwd command to change the password. This command changes shadow file which in /etc directory.
+* #### Log in to the system as root.
+* #### Use the passwd command to change the password. This command changes shadow file which in /etc directory.
 ![1](screenshots/1.png)  
 ![2](screenshots/2.png)  
 
-#### To determine the users registered in the system we have to list file shadow in /etc directory.
+#### To determine the users registered in the system we have to list passwd file in /etc directory.
 #### The /etc/passwd file is a text-based database of information about users that may log into the system or other operating system user identities that own running processes.
 
 ![3](screenshots/3.png)  
 ![4](screenshots/4.png)  
 
 #### Additional information for root can be gleaned from the command execution.
+
+![3_1](screenshots/3_1.png) 
+
 The fields, in order from left to right, are:  
 
-1. User name: the string a user would type in when logging into the operating system: the logname. Must be unique across users listed in the file.  
+1. root: the string a user would type in when logging into the operating system: the logname. Must be unique across users listed in the file.  
 
 2. x: Information used to validate a user's password; in most modern uses, this field is usually set to "x" (or "*", or some other indicator) with the actual password information being stored in a separate shadow password file.  
 
@@ -52,13 +55,14 @@ Displays a single line of information about each of the people who are logged in
 
 •	Office Phone: This is another legacy item. If root hasn’t recorded the office phone number for a person, it will show a blank.  
 
-#### Change personal information about yourself and describe in plans that you are working on laboratory work 1. 
+* #### Change personal information about yourself and describe in plans that you are working on laboratory work 1. 
 
 ![7](screenshots/7.png) 
 ![8](screenshots/8.png) 
 
 
-#### Become familiar with the Linux help system and the man and info commands. Get help on the previously discussed commands, define and describe any two keys for these commands.
+* #### Become familiar with the Linux help system and the man and info commands. Get help on the previously discussed commands, define and describe any two keys for these commands.
+
 #### Example 1.  
 
 #### ``` sudo passwd –S root ```  
@@ -81,7 +85,7 @@ Finger command with -l and -s keys for root and linux1 user.
 ![11](screenshots/11.png) 
 ![12](screenshots/12.png) 
 
-#### Explore the ```more``` and ```less``` commands using the help system. View the contents of files .bash* using commands.  
+* #### Explore the ```more``` and ```less``` commands using the help system. View the contents of files .bash* using commands.  
 
 ![13](screenshots/13.png) 
 ![14](screenshots/14.png) 
@@ -130,7 +134,7 @@ If you need to track down the number of every line with ```less``` command use t
 
 
 
-#### List the contents of the home directory using the ls command, define its files and directories. Hint: Use the help system to familiarize yourself with the ls command.
+* #### List the contents of the home directory using the ls command, define its files and directories. Hint: Use the help system to familiarize yourself with the ls command.
 
 ![23](screenshots/23.png) 
 
