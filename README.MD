@@ -31,6 +31,9 @@
 * #### [TASK 4.3.](/m4/task4.3/README.MD)
 * #### [TASK 4.4.](/m4/task4.4/README.MD)
 ### Module 5. Linux Essentials
+* #### [TASK 5.1.](./m5/task5.1/README.MD)
+    * #### [PART 1. Using commands: passwd, finger, more, less, ls. Fimiliarity with help system, man and info commands](./m5/task5.1/part1/README.MD)
+    * #### [PART 2. Using commands: tree, file, ls. Fimiliarity with commands find, grep, locate](./m5/task5.1/part2/README.MD)
 ### Module 6. Networks using Linux
 ### Module 7.Linux Administration with Bash
 ### Module 8.Python Intro
