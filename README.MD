@@ -34,6 +34,7 @@
 * #### [TASK 5.1.](./m5/task5.1/README.MD)
     * #### [PART 1. Using commands: passwd, finger, more, less, ls. Fimiliarity with help system, man and info commands](./m5/task5.1/part1/README.MD)
     * #### [PART 2. Using commands: tree, file, ls. Fimiliarity with commands find, grep, locate](./m5/task5.1/part2/README.MD)
+* #### [TASK 5.2.](./m5/task5.2/README.MD)    
 ### Module 6. Networks using Linux
 ### Module 7.Linux Administration with Bash
 ### Module 8.Python Intro
