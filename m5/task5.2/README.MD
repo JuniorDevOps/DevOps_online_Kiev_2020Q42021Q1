@@ -18,7 +18,7 @@ Where:
 **gid** - unique identifier of the group within the system to which the user belongs;  
 **uid comments** - comment, extended user description, for example, full name;   
 **directory** - user's home directory;  
-**shell**- program name - the user's command interpreter.  
+**shell** - program name - the user's command interpreter.  
 
 The username must not contain a colon character. In addition, it is not recommended to use a period (.) In a name, or start it with + or -.   
 The password field can be empty, indicating that no password is required to register a user. It can also contain not more than 13 characters of the encrypted version of the password.   
@@ -27,7 +27,7 @@ uid is a simple numeric designation for an individual user. This is usually a po
 
 **What users exist on the system?**    
 0 (root),   
-1-999(daemons, pseudo-users, system and reserved users),   
+1-999 (daemons, pseudo-users, system and reserved users),   
 1000+ (regular users).  
 
 **Specify several pseudo-users, how to define them?**    
@@ -42,9 +42,9 @@ uid is a simple numeric designation for an individual user. This is usually a po
 
 To define UID of pseudo-users we can list the **/etc/passwd**. Name of pseudo-users is present in first colomn and theirs UID in third colomn (should be from 1 to 999).
 
-**What fields are present in/etc/group file? **
+**What fields are present in/etc/group file?**
 
-**File structure etc/group. **  
+**File structure etc/group.**  
 
 ![3](screenshots/3.png)
 ![4](screenshots/4.png)     
@@ -57,8 +57,11 @@ The format for this file is as follows:
 **group_name:password:group_id:list** 
 
 The **group_name** field contains the text name for the group. 
+
 The **password** field contains the encrypted password of this group. If this field is empty, than tou no need password required. 
+
 The **group_id** field contains a unique identifier for this group. 
+
 The **list** field contains a comma separated list of users belonging to this group. Users do not need to be included in the list of those groups that are specified as their primary in the **/etc/passwd** file.
 
 ### 2. What is UID? What are the uid ranges? How to define it?
@@ -67,7 +70,8 @@ The **list** field contains a comma separated list of users belonging to this gr
 
 **UID** is a simple numeric designation for an individual user. This is usually a positive number not more than 65535 (sometimes 32-bit). 
 
-**The UID ranges are: **
+**The UID ranges are:**  
+
 0 (root),   
 1-999 (daemons, pseudo-users, system and reserved users),   
 1000+ (regular users).  
@@ -78,15 +82,15 @@ To define UID we can list the **/etc/passwd** (UID presents in third colomn).
 
 **GID** - unique identifier of the group within the system to which the user belongs.  
 
-To define GID we can list the /etc/passwd (GID presents in fourth colomn) or list
-the /etc/group (GID presents in third colomn).  
+To define GID we can list the **/etc/passwd** (GID presents in fourth colomn) or list
+the **/etc/group** (GID presents in third colomn).  
 
 ### 4. How to determine belonging of user to the specific group?
 
 We can list the **/etc/group** file or type ```getent group``` command.
-First colomn shows us a **group name** and the fourth colomn is the** list** field contains a comma separated list of users belonging to this group.  
+First colomn shows us a **group name** and the fourth colomn is the **list** field contains a comma separated list of users belonging to this group.  
 
-****Another options to to determine belonging of user to the specific group are: ****
+**Another options to to determine belonging of user to the specific group are:**
 
 ```group [username] ```
 or 
@@ -98,7 +102,7 @@ Output of these commands show us a list of all groups a specific user belongs to
 
 ****The main commands for adding user to the system are: ****
 
-1.	```adduser [username]``` ( is a perl script which uses ```useradd``` binary in back-end)
+**Option 1.**	```adduser [username]``` ( is a perl script which uses ```useradd``` binary in back-end)
 
 ****This command creates:****  
 -	User;  
@@ -109,20 +113,21 @@ Output of these commands show us a list of all groups a specific user belongs to
 
 ![5](screenshots/5.png)     
 
-2.	```useradd [username]``` (is native binary compiled with the system)  
+**Option 2.**	```useradd [username]``` (is native binary compiled with the system)  
 This command creates only user account without any other parameters for user.
 
-****Other mains commands for working with Linux accounts are: ****
+**Other mains commands for working with Linux accounts are:**  
+
 ```userdel``` - deleting user;    
 ```usermod``` - move the current home directory to a new location;    
 ```passwd ``` - add or change user password.    
 
-**The command interface is as follows: ** 
+**The command interface is as follows:** 
 1) useradd [-c uid comment] [-d dir] [-e expire] [-f inactive] [-g gid] [-m [-k skel_dir]] [-s shell] [-u uid [-o]] username   
 2) userdel [-r] username   
 3) usermod [-c uid comment] [-d dir [-m]] [-e expire] [-f inactive] [-g gid] [-G gid [, gid]] [-l new username] [-s shell] [-u uid [-o]] username  
 
-**The main parameters have the following meanings: **  
+**The main parameters have the following meanings:**  
   
 **username** is the login name of the user. This is the only required parameter in all commands.  
 **uid comment** is an additional comment about the user with the specified name.  
@@ -143,7 +148,7 @@ uid is the unique user identifier associated with this name.
 
 **The format of Password change command passwd this:**  
 
-**passwd[-k] [-l] [-u [-f]] [-d] [-S] [username] **
+**passwd[-k] [-l] [-u [-f]] [-d] [-S] [username]**
 
 **The main parameters have the following meanings:**  
 **-k** - used to update only those passwords that have expired.  
@@ -178,13 +183,13 @@ Here is sample **/etc/defualt/useradd** file which defines the skel directory.
 
 By default useradd file has 8 values.  
 
-```SHELL=/bin/sh```
-```GROUP=100```
-``````HOME=/home```
-```INACTIVE=-1```
-```EXPIRE=```
-```SKEL=/etc/skel```
-```CREATE_MAIL_SPOOL=yes```
+```SHELL=/bin/sh```  
+```GROUP=100```  
+```HOME=/home```  
+```INACTIVE=-1```  
+```EXPIRE=```  
+```SKEL=/etc/skel```  
+```CREATE_MAIL_SPOOL=yes```  
 
 But in my case, I have only one uncommented value by default - **SHELL=/bin/sh**.  
 See the screenshot below.
@@ -192,13 +197,11 @@ See the screenshot below.
 ![7](screenshots/7.png)  
 ![8](screenshots/8.png)     
      
-
-
 ### 8. How to remove a user from the system (including his mailbox)? 
 
 In most Linux distributions, when removing a user account with ```userdel```, the user **home** and **mail spoo**l directories are not removed.  
 
-We should use the ```-r``` (--remove) option to force ```userdel``` to remove the user’s home directory and mail spool:  
+We should use the ```-r (--remove)``` option to force ```userdel``` to remove the user’s home directory and mail spool:  
 
 ```userdel -r username```  
 
@@ -211,7 +214,7 @@ To lock a users account use the command:
 
 Both the commands adds an exclamation mark [!] in the second field of the file **/etc/shadow**.  
 
-For example:  
+**For example:**  
 
 ```passwd -l [username]```  
 
@@ -273,20 +276,20 @@ Inode number is a unique identifier for afile in the file system that contains:
 
 **2. File permissions (drwxrwxr-x)**  
 The first character indicates the file type:  
--	- regularfile;  
-d - directory;  
-b - blockdevice;  
-c - characterdevice;  
-l - symboliclink;  
-p – pipe (pipe,fifo);  
-s - socket.  
+- - - regularfile;  
+- d - directory;  
+- b - blockdevice;  
+- c - characterdevice;  
+- l - symboliclink;  
+- p – pipe (pipe,fifo);  
+- s - socket.  
 
 Three sets of characters, three times, indicating permissions for owner, group and other:  
-•	r = readable  
-•	w = writable  
-•	x = executable (for files) or accessible (for directories)  
+- r = readable  
+- w = writable  
+- x = executable (for files) or accessible (for directories)  
 
-3.**Number of (hard) links (2)**  
+**3. Number of (hard) links (2)**  
   The number of hard links means the number of names the inode has, i.e. links created with ln without the -s option.  
 
 **4. Owner name (linux1)**  
@@ -297,34 +300,35 @@ Three sets of characters, three times, indicating permissions for owner, group a
 
 **7. Time of last modification (Dec 20 14:48)**  
 
-**8. File/directory name (amazonws)  
+**8. File/directory name (amazonws)**  
 
 ### 12. What access rights exist and for whom (i. e., describe the main roles)? Briefly describe the acronym for access rights.   
 
 On a Linux system, each file and directory is assigned access rights for the owner of the file, the members of a group of related users, and everybody else. Rights can be assigned to read a file, to write a file, and to execute a file.  
 
-To see the permission settings for a file or dir, we can use 
-the ```ls –l [file name]``` command  
+To see the permission settings for a file or dir, we can use the command:   
+
+```ls –l [file name]```    
 or   
 ```namei –l [path]```.  
 
 Each of 10 characters in sequence are indicate the file type and three sets of three characters that convey the reading, writing and execution permission for the owner, group, and everybody else.  
 
-**Read permission for file (first character) **  
-**-	** The file cannot be read.  
+**Read permission for file (first character)**  
+**-** The file cannot be read.  
 **r**	 The file can be read.  
 
-**Write permission for file (second character) **  
-**-	** The file cannot be modified.  
+**Write permission for file (second character)**  
+**-** The file cannot be modified.  
 **w**	 The file can be modified.  
 
-**Execute permission for file (third character) **  
-**-	** The file cannot be executed.  
-**x**	 The file can be executed.  
-**s**	 The setuid bit when found in the user triad; the setgid bit when found in the group triad; it is not found in the others triad; it also implies that x is set.  
-**S**	 Same as s, but x is not set; rare on regular files, and useless on folders.  
-**t**	 The sticky bit; it can only be found in the others triad; it also implies that x is set.  
-**T** 	Same as t, but x is not set; rare on regular files, and useless on folders.  
+**Execute permission for file (third character)**  
+**-** The file cannot be executed.  
+**x**	The file can be executed.  
+**s**	The setuid bit when found in the user triad; the setgid bit when found in the group triad; it is not found in the others triad; it also implies that x is set.  
+**S**	Same as s, but x is not set; rare on regular files, and useless on folders.  
+**t**	The sticky bit; it can only be found in the others triad; it also implies that x is set.  
+**T** Same as t, but x is not set; rare on regular files, and useless on folders.  
 
 ### 13. What is the sequence of defining the relationship between the file and the user?   
 
@@ -472,7 +476,7 @@ Allowing everyone to execute the script, enter:
 
 ```chmod +x script.sh```    
 
-![23](screenshots/24.png)           
+![23](screenshots/23.png)           
 
 or  
 
