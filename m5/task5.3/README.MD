@@ -1,0 +1,2 @@
+* #### [PART 1. Fimiliarity with and using commands: pstree, ps, top, nice/renice, kill, jobs, fg, bg, nohup.](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m5/task5.3/part1/README.MD)
+* #### [PART 2. Basic settings, encryption, security in SSH. Port forwarding and traffic interception.](https://github.com/JuniorDevOps/DevOps_online_Kiev_2020Q42021Q1/blob/main/m5/task5.3/part2/README.MD)
