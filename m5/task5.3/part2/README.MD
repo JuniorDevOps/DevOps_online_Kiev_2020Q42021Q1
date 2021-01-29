@@ -18,7 +18,7 @@ I have a Linux machine with ```192.168.1.159``` ip that I would like connect to:
 
 ![5](screenshots/5.png)
 
-After that I ping that Linux machine:
+After that, I ping this Linux machine to check if it is available or not.
 
 ![6](screenshots/6.png)  
 
@@ -149,25 +149,25 @@ First, the tool asked where to save the file. SSH keys for user authentication a
 SSH supports several public key algorithms for authentication keys. The algorithm is selected using the -t option and key size using the -b option.
 These include:
 
-**rsa** - an old algorithm based on the difficulty of factoring large numbers. A key size of at least 2048 bits is recommended for RSA; 4096 bits is better. RSA is getting old and significant advances are being made in factoring. Choosing a different algorithm may be advisable. It is quite possible the RSA algorithm will become practically breakable in the foreseeable future. All SSH clients support this algorithm.
+**RSA** - an old algorithm based on the difficulty of factoring large numbers. A key size of at least 2048 bits is recommended for RSA; 4096 bits is better. RSA is getting old and significant advances are being made in factoring. Choosing a different algorithm may be advisable. It is quite possible the RSA algorithm will become practically breakable in the foreseeable future. All SSH clients support this algorithm.
 
 ```ssh-keygen -t rsa -b 4096```
 
 ![17](screenshots/17.png)
 
-**dsa** - an old US government Digital Signature Algorithm. It is based on the difficulty of computing discrete logarithms. A key size of 1024 would normally be used with it. DSA in its original form is no longer recommended.
+**DSA** - an old US government Digital Signature Algorithm. It is based on the difficulty of computing discrete logarithms. A key size of 1024 would normally be used with it. DSA in its original form is no longer recommended.
 
 ```ssh-keygen -t dsa```
 
 ![18](screenshots/18.png)
 
-**ecdsa** - a new Digital Signature Algorithm standarized by the US government, using elliptic curves. This is probably a good algorithm for current applications. Only three key sizes are supported: 256, 384, and 521 (sic!) bits. We would recommend always using it with 521 bits, since the keys are still small and probably more secure than the smaller keys (even though they should be safe as well). Most SSH clients now support this algorithm.
+**ECDSA** - a new Digital Signature Algorithm standarized by the US government, using elliptic curves. This is probably a good algorithm for current applications. Only three key sizes are supported: 256, 384, and 521 (sic!) bits. We would recommend always using it with 521 bits, since the keys are still small and probably more secure than the smaller keys (even though they should be safe as well). Most SSH clients now support this algorithm.
 
 ```ssh-keygen -t ecdsa -b 521```
 
 ![19](screenshots/19.png)
 
-**ed25519** - this is a new algorithm added in OpenSSH. Support for it in clients is not yet universal. Thus its use in general purpose applications may not yet be advisable.
+**ED25519** - this is a new algorithm added in OpenSSH. Support for it in clients is not yet universal. Thus its use in general purpose applications may not yet be advisable.
 
 ```ssh-keygen -t ed25519```  
 
@@ -194,8 +194,8 @@ To better understand how port forwarding works, let’s install Apache webserver
 ![25](screenshots/25.png)
 
 After that we have to go to Network setting in VirtualBox for our guest machine and set portforwarding.  
-For SSH we forwarding from Port 22 of guest machine to Port 479 of host machine.
-For Apache we forwarding from Port 80 of guest machine to Port 8888 of host machine.  
+For SSH we forwarding from Port 22 on guest machine to Port 479 on host machine.  
+For Apache we forwarding from Port 80 on guest machine to Port 8888 on host machine.  
 
 ![26](screenshots/26.png)
 
