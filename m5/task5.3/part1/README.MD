@@ -72,24 +72,27 @@ When managing processes, it is easy to recognize the kernel processes because th
 
 ![13](screenshots/13.png)
 
-**USER** = user owning the process;  
+**USER** - user owning the process;  
 
-**PID** = process ID of the process;
+**PID** - process ID of the process;
 
-**%CPU** = It is the CPU time used divided by the time the process has been running; 
+**%CPU** - it is the CPU time used divided by the time the process has been running; 
 
-**%MEM** = ratio of the process’s resident set size to the physical memory on the machine;
+**%MEM** - ratio of the process’s resident set size to the physical memory on the machine;
 
-**VSZ** = virtual memory usage of entire process (in KiB);
+**VSZ** - virtual memory usage of entire process (in KiB);
 
-**RSS** = resident set size, the non-swapped physical memory that a task has used (in KiB);
+**RSS** - resident set size, the non-swapped physical memory that a task has used (in KiB);
 
-**TTY** = controlling tty (terminal);  
+**TTY** - controlling tty (terminal);  
 
-**STAT** = multi-character process state;  
-**START** = starting time or date of the process;  
-**TIME** = cumulative CPU time;  
-**COMMAND** = command with all its arguments.  
+**STAT** - multi-character process state;  
+
+**START** - starting time or date of the process;  
+
+**TIME** - cumulative CPU time;  
+
+**COMMAND** - command with all its arguments.  
 
 **THE CONDITIONS THAT PROCESS CAN BE ARRIVING IN ARE:**
 
@@ -97,7 +100,7 @@ When managing processes, it is easy to recognize the kernel processes because th
 
 ### 8. Display only the processes of a specific user. 
 
-If you wish to list processes associated with a specific user, use the -u flag as shown  
+If you wish to list processes associated with a specific user, use the -u flag as shown:  
 
 ```ps -u user```
 
@@ -107,13 +110,13 @@ If you wish to list processes associated with a specific user, use the -u flag a
 
 Common commands for ```ps``` are:  
 
-```ps aux``` - If you are looking for a short summary of the active processes.  
+```ps aux``` - if you are looking for a short summary of the active processes.  
 
 ![13](screenshots/13.png)
 
 or  
 
-```ps -ef``` - If you are not only looking for the name of the process but also for the exact command that was used to start the process.  
+```ps -ef``` - if you are not only looking for the name of the process but also for the exact command that was used to start the process.  
 
 ![14](screenshots/14.png)
 
@@ -127,11 +130,11 @@ or
 
 The ```top``` program provides a dynamic real-time view of a running system. It can display system summary information as well as a  list  of  processes  or  threads  currently being managed by the Linux kernel.  The types of system summary information shown and  the  types,  order  and size  of information displayed for processes are all user configurable and that configuration can be made persistent across restarts.
 
-The program provides a limited interactive interface for  process  manipulation  as  well  as  a much more extensive interface for personal configuration  --  encompassing every aspect of  its  operation.   And while  top  is  referred  to throughout this document, you are free to name the program anything you wish.  That new name, possibly an alias, will  then  be  reflected  on  top's display and used when reading and writing a configuration file.
+The program provides a limited interactive interface for  process  manipulation  as  well  as  a much more extensive interface for personal configuration -  encompassing every aspect of  its  operation.   And while  top  is  referred  to throughout this document, you are free to name the program anything you wish.  That new name, possibly an alias, will  then  be  reflected  on  top's display and used when reading and writing a configuration file.
 
 ### 11. Display the processes of the specific user using the top command.  
 
-To display the processes of the specific user we should us the ```top``` command with ```-u``` key.  
+To display the processes of the specific user we should us the ```top``` command with ```-u``` key:  
 
 ```top -u [username]```  
 
@@ -187,7 +190,7 @@ Examples:
 
 ```nice -10 [name or PID of process]``` - to set the priority of a process.  
 
-```nice - -10 [name or PID of process]``` - to set the negative priority for a process.
+```nice --10 [name or PID of process]``` - to set the negative priority for a process.
 
 ```renice -n 15 -p [PID of process]``` - changing priority of the runing process.
 
@@ -224,16 +227,19 @@ In general, it is a bad idea to use ```kill -9```:
 
 ### 17. Commands jobs, fg, bg, nohup. What are they for? Use the sleep, yes command to demonstrate the process control mechanism with fg, bg.
 
-**Job Control Commands**
+**Job Control Commands.**
 
 Job control commands enable you to place jobs in the foreground or background, and to start or stop jobs. The table describes the job control commands.
 
-```jobs``` - command is used to list the jobs that you are running in the background and in the foreground. If the prompt is returned with no information no jobs are present; 
-```bg %n``` - places the current or specified job in the background, where n is the job ID;
-```fg %n``` - brings the current or specified job into the foreground, where n is the job ID;
+```jobs``` - command is used to list the jobs that you are running in the background and in the foreground. If the prompt is returned with no information no jobs are present;  
+
+```bg %n``` - places the current or specified job in the background, where n is the job ID;  
+
+```fg %n``` - brings the current or specified job into the foreground, where n is the job ID;  
+
 ```Control-Z``` - stops the foreground job and places it in the background as a stopped job.  
 
-Example to demonstrate the process control mechanism with jobs, fg, bg.  
+Example to demonstrate the process control mechanism with jobs, fg, bg:
 
 ![29](screenshots/29.png)
 
