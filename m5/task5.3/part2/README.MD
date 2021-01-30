@@ -226,3 +226,67 @@ Lets see what state do we have on port 479.
 
 ### 5*. Intercept (capture) traffic (tcpdump, wireshark) while authorizing the remote client on the server using ssh, telnet, rlogin. Analyze the result.
 
+I captured some traffic via wireshark while authorizing the remote client on the server using ssh.
+
+![33](screenshots/33.png)
+
+So, what we got here?  
+
+Classic SSH Handshake (encryption and connection establishment).
+Secure Shell (SSH) is a widely used Transport Layer Protocol to secure connections between clients and servers. 
+
+![34](screenshots/34.png)
+
+Main stages are:
+
+**- TCP connection**  
+
+**- SSH protocol version exchange**  
+
+**- Key Exchange**  
+
+**- Elliptic Curve Diffie-Hellman Initialization**  
+
+**- Elliptic Curve Diffie-Hellman Reply**  
+
+**- New Keys**  
+
+**- SSH connection esteblished** 
+
+After the TCP connection is established (handshake), the server sends a response with the versions of the protocols it supports. If the client supports one of them, the connection is promoted further. The server also provides its own public host key, which the client can use to check (known hosts).
+
+In the next step, both parties generate a symmetric key using one of the modifications of the Diffie-Hellman algorithm. The algorithm (and its variations) allows each party to combine their private keys with the public keys of the connecting party. This results in the same secret for symmetric encryption.
+
+The next step is to authorize the user. There are several different ways that can be used for this purpose. Depends what the server supports.
+
+Probably the easiest is with a password, when the server simply prompts the user to type it on the keyboard. The password is transmitted through the secure connection established by this moment. That is, third parties will not be able to "peep" the password during transmission (the so-called MITM attack - Man In The Middle).
+
+But, despite the fact that the password will be transmitted in encrypted form, this method is not recommended, since the complexity of the password has obvious limitations. It becomes possible to guess a password in an automated way (Brute-force attack).
+
+A popular and recommended alternative is to use key authentication. SSH key pairs are asymmetric, that is, two related keys are used for different purposes.
+
+A public key for encrypting data and only for that. Then, as private to decrypt what was encrypted with the paired public key. The latter can be passed on to anyone, but despite its relationship to the private, there is no way to get (calculate) the private key from the public key.
+
+Key authorization begins only after an encrypted connection is established. 
+The process goes like this:  
+
+1. The client sends to the server the key ID by which he wants to authorize.  
+
+2. The server checks the authorized_keys file in the home directory of the user under which the client wishes to log in.  
+
+3. If a public key with the specified ID is found, the server generates a random number (challenge message) and encrypts it using this key.  
+
+4. The server sends the encryption to the client.  
+
+5. If the client has a private key that is paired with the public one on the server, he is able to decrypt what has been transmitted in clauses 3 - 4  
+
+6. The client combines the decrypted number with the shared secret key set for the current session. Then it calculates the md5 hash of the data obtained after combining.  
+
+7. The client sends the hash from item 6 back to the server, as a response to its encryption  
+
+8. The server uses the same secret key from the session and the number that it generated in step 3 and also calculates md5, like the client before. If the received hash and the one received from the client match, this proves that the latter owns the private key. Therefore, the user is considered authorized.  
+
+As you can see, key asymmetry allows the server to encrypt the message to the client using the public key. The client can then prove that he owns the response private key by correctly decrypting the message. Two types of encryption have been used (symmetric and asymmetric), each of which has its own strengths in this particular model.
+
+
+
