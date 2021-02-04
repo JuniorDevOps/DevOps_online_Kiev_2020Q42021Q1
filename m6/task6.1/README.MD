@@ -71,9 +71,11 @@ We need to make some changes to ```sysctl.conf``` file and add some entries (rul
 
 -P FORWARD ACCEPT  
 
--P OUTPUT ACCEPT  
+-P OUTPUT ACCEPT    
 
-The meaning of some keys:  
+
+
+**The meaning of some keys:**  
 
 **-A** chain		 (append to chain)
 
@@ -89,13 +91,16 @@ The meaning of some keys:
 
 **-P** chain target	 (change policy on chain to target)
 
-List of the commands:
+
+
+**List of the commands:**
 
 ```sudo iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE```  
 
 ```sudo iptables -A FORWARD -i enp0s8 -o enp0s3 -m state --state RELATED,ESTABLISHED -j ACCEPT```  
 
 ```sudo iptables -A FORWARD -i enp0s8 -o enp0s3 -j ACCEPT```
+
 
 **After:**
 
@@ -109,11 +114,11 @@ Routing tables of VM1 and VM2.
 
 #### 3. Check the route from VM2 to Host.
 
-Pinging host machine (1921.168.1.181).
+Pinging the host machine (192.168.1.181).
 
 ![20](screenshots/20.png)
 
-Checking the route fron VM2 to host machine.
+Checking the route from VM2 to the host machine.
 
 ![21](screenshots/21.png)
 
@@ -123,7 +128,7 @@ Pinging 8.8.8.8 IP address.
 
 ![22](screenshots/22.png)
 
-Checking the route fron VM2 to 8.8.8.8 ip address.
+Checking the route from VM2 to 8.8.8.8 ip address.
 
 ![23](screenshots/23.png)
 
@@ -135,7 +140,7 @@ For this purpose we use the command:
 
 ![24](screenshots/24.png)
 
-If we want to know more not only about ip addresses but also the hostname, we need to add a DNS server to our config.  
+If we want to know more not only about ip addresses but also the hostnames, we need to add a DNS server to our config file.  
 
 ![25](screenshots/25.png)
 
@@ -157,7 +162,7 @@ For do that we may use some commands:
 
 #### 7. Determine the default gateway for your HOST and display routing table.  
 
-Firstly, we check the entire network configuration we the command:
+First, we check the entire network configuration with the command:
 
 ```ipconfig```
 
