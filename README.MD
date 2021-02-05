@@ -36,6 +36,7 @@
     * #### [PART 2. Using commands: tree, file, ls. Fimiliarity with commands find, grep, locate](./m5/task5.1/part2/README.MD)
 * #### [TASK 5.2.](./m5/task5.2/README.MD)    
 ### Module 6. Networks using Linux
+* #### [TASK 6.1. Networking with Linux](./m6/task6.1/README.MD)  
 ### Module 7.Linux Administration with Bash
 ### Module 8.Python Intro
 ### Module 9.CICD & IaC & Containerization  
