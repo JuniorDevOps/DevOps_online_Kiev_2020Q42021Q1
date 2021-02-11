@@ -90,7 +90,7 @@ Key ```--mr```
 Key ```--b```
 ![12](screenshots/12.png)
 
-## [apache.log](TaskB.script.sh)
+## [apache.log](TaskB.example_log.log)
 ## [script.sh](TaskB.script.sh)
 
 ```Bash
