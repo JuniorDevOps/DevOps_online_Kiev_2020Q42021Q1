@@ -67,16 +67,22 @@ fi
 ![6](screenshots/6.png)
 
 #### 1. From which ip were the most requests? 
+Key ```--m```
 ![7](screenshots/7.png)
 #### 2. What is the most requested page?
+Key ```--r```
 ![8](screenshots/8.png)
 #### 3. How many requests were there from each ip?
+Key ```--ip```
 ![9](screenshots/9.png)
 #### 4. What non-existent pages were clients referred to?
+Key ```--n```
 ![10](screenshots/10.png)
 #### 5. What time did site get the most requests?
+Key ```--mr```
 ![11](screenshots/11.png)
 #### 6. What search bots have accessed the site?
+Key ```--b```
 ![12](screenshots/12.png)
 
 ## [apache.log](TaskB.script.sh)
@@ -168,28 +174,103 @@ fi
 3. Path to the directory with logs and temp files.
 
 In case of adding new or deleting old files, the script must add a corresponding entry to the log file indicating the time, type of operation and file name. 
-The command to run the script must be added to crontab with a run frequency of one minute.
+The command to run the script must be added to crontab with a run frequency of one minute.  
 
-![12](screenshots/12.png)  
+Create a bash script file and set on it executible permission.
 
 ![13](screenshots/13.png)  
 
+Create **data**, **backup**, **logs** directories.
+
 ![14](screenshots/14.png)
+
+Cheking crontab file for our user.
 
 ![15](screenshots/15.png)
 
+Go to the directoey **data** and create 5 files.
+
 ![16](screenshots/16.png)
+
+Lets launch our script with required parameters and check out crontab file once more.
 
 ![17](screenshots/17.png)
 
+Go to the **log** directory and check out our log file.
+
 ![18](screenshots/18.png)
+
+Remove one (test1.txt) of the files.
 
 ![19](screenshots/19.png)
 
+Checking the log file to see what happend after the file was deleting. 
+
 ![20](screenshots/20.png)
+
+Lets add a file (test6.txt).
 
 ![21](screenshots/21.png)
 
+Checking the log file to see what happend after the file was deleting. 
+
 ![22](screenshots/22.png)
 
+## [script.sh](TaskC.backup.sh)
 
+```Bash
+#!/bin/bash
+
+# Path to data dir
+sync_dir=${1}
+
+# Path to backup dir
+backup_dir=${2}
+
+# Path to dir with logs and temp files
+logs_dir=${3}
+
+
+diff -r $sync_dir $backup_dir | cut -f3,4 -d' ' > $logs_dir/temp
+
+printf "%20s\t%20s\t%20s\n"   "Type"         "Name"         "Time"
+
+
+if [ ! -e ${logs_dir}/log.log ]; then
+        #current crontab
+        crontab -l > $logs_dir/cron
+        #add new cron task
+        echo " * * * * * /home/linux2/task3/backup.sh ${sync_dir} ${backup_dir} ${logs_dir}" >> $logs_dir/cron
+        #set new cron file
+        crontab $logs_dir/cron
+        rm $logs_dir/cron
+fi
+
+
+cat $logs_dir/temp | while read line
+do
+        file_name="$(echo $line | cut -d ' ' -f 2)"
+        folder_name="$(echo $line | cut -d : -f 1)"
+ 
+        if [[ "$folder_name" == "$sync_dir" ]]; then
+            cp ${folder_name}/${file_name} $backup_dir
+            name=$(stat --format=%n ${folder_name}/${file_name} | rev | cut -d/ -f1 | rev)
+            last_mod_time=$(date -r ${folder_name}/${file_name} "+%H:%M")
+            printf "%20s\t%20s\t%20s\n" "File added" ${name} ${last_mod_time}
+            printf "%20s\t%20s\t%20s\n" "File added" ${name} ${last_mod_time} | tee --append ${logs_dir}/log.log >/dev/null
+        
+        elif [[ "$folder_name" == "$backup_dir" ]]; then
+            name=$(stat --format=%n ${folder_name}/${file_name} | rev | cut -d/ -f1 | rev)
+            last_mod_time=$(date -r ${folder_name}/${file_name} "+%H:%M")
+            printf "%20s\t%20s\t%20s\n" "File deleted" ${name} ${last_mod_time}
+            printf "%20s\t%20s\t%20s\n" "File deleted" ${name} ${last_mod_time} | tee --append ${logs_dir}/log.log >/dev/null
+        fi
+
+done
+
+if [ -e ${logs_dir}/log.log ]; then
+        rm $backup_dir/* && cp $sync_dir/* $backup_dir
+fi
+
+rm $logs_dir/temp
+```
