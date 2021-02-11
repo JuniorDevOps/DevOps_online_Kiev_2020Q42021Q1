@@ -63,7 +63,12 @@ fi
 
 ## Subtask B. Using Apache log example create a script to answer the following questions.  
 
-![5](screenshots/5.png)
+Create a bash script file and set on it executible permission.  
+
+![5](screenshots/5.png)  
+
+When starting without parameters, it will display a list of possible keys and their description.
+
 ![6](screenshots/6.png)
 
 #### 1. From which ip were the most requests? 
