@@ -38,6 +38,7 @@
 ### Module 6. Networks using Linux
 * #### [TASK 6.1. Networking with Linux](./m6/task6.1/README.MD)  
 ### Module 7.Linux Administration with Bash
+* #### [TASK 7.1. Linux Administration with Bash](./m7/task7.1/README.MD)
 ### Module 8.Python Intro
 ### Module 9.CICD & IaC & Containerization  
 
