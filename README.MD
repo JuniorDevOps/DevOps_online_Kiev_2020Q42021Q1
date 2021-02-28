@@ -39,7 +39,8 @@
 * #### [TASK 6.1. Networking with Linux](./m6/task6.1/README.MD)  
 ### Module 7.Linux Administration with Bash
 * #### [TASK 7.1. Linux Administration with Bash](./m7/task7.1/README.MD)
-### Module 8.Python Intro
-### Module 9.CICD & IaC & Containerization  
+### Module 8.CICD  
+### Module 9.Python Essentials
+* #### [TASK 9.1. Python Essentials](./m9/task9.1/README.MD)
 
 ## [Final Project](./Final_Project/)
