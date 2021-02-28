@@ -37,10 +37,14 @@
 * #### [TASK 5.2.](./m5/task5.2/README.MD)    
 ### Module 6. Networks using Linux
 * #### [TASK 6.1. Networking with Linux](./m6/task6.1/README.MD)  
-### Module 7.Linux Administration with Bash
+### Module 7. Linux Administration with Bash
 * #### [TASK 7.1. Linux Administration with Bash](./m7/task7.1/README.MD)
-### Module 8.CICD  
-### Module 9.Python Essentials
+### Module 8. CICD  
+* #### [Task 8.1. Jenkins Task](./m8/task8.1/README.MD)
+### Module 9. Python Essentials
 * #### [TASK 9.1. Python Essentials](./m9/task9.1/README.MD)
-
+### Module 10. Ansible. Configuration Management
+* #### [TASK 10.1. Anisble Task](./m10/task10.1/README.MD)
+### Module 11. Docker
+* #### [TASK 11.1. Docker Task](./m11/task11.1/README.MD)
 ## [Final Project](./Final_Project/)
