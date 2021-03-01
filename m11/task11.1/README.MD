@@ -1,4 +1,4 @@
-# Task 8.1. Docker task.
+# Task 11.1. Docker task.
 ## Using docker lection 2 create a docker image with Python Flask app that displays random cat pix.
 
 The goal of this exercise is to create a Docker image which will run a Flask app.  
